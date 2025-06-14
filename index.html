@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="shortcut icon" href="./assets/s.png" type="image/x-icon" />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/9ee87aba9b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Shaz_Store E-commerce Tailwind_Project</title>
+  </head>
+  <body class="font-font-pop">
+    <!-- NavBar start -->
+    <nav class="flex flex-col">
+      <!-- top navBar -->
+      <div
+        class="container hidden md:flex flex-col md:flex-row items-center justify-between border-b-2 pb-4 gap-4"
+      >
+        <div class="flex gap-2 text-black">
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook bg-[#f2f2f2] p-[6px] text-gray-600 rounded-md"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram bg-[#f2f2f2] p-[6px] text-gray-600 rounded-md"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-x-twitter bg-[#f2f2f2] p-[6px] text-gray-600 rounded-md"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github bg-[#f2f2f2] p-[6px] text-gray-600 rounded-md"
+            ></i
+          ></a>
+        </div>
+
+        <div class="order-3 md:order-2">
+          <span class="text-gray-600 text-xs md:text-sm uppercase text-center"
+            >Free Shipping This Week Order Over - $55</span
+          >
+        </div>
+
+        <div
+          class="inline-flex text-gray-500 gap-4 md:gap-6 text-sm order-2 md:order-3"
+        >
+          <span>USD $ <i class="fa-solid fa-angle-down"></i></span>
+          <span>ENGLISH <i class="fa-solid fa-angle-down"></i></span>
+        </div>
+      </div>
+
+      <!-- middle navBar -->
+      <div
+        class="container mt-2 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-12 border-b-2 pb-6"
+      >
+        <div id="logo" class="text-3xl md:text-4xl font-bold order-1">Shaz</div>
+
+        <div class="w-full md:w-auto flex-1 order-3 md:order-2">
+          <input
+            class="border w-full p-3 rounded-xl"
+            type="text"
+            placeholder="Search Items Here..."
+          />
+        </div>
+
+        <div class="flex gap-4 order-2 md:order-3">
+          <button>
+            <i
+              class="fa-regular fa-heart text-2xl md:text-3xl text-gray-600"
+            ></i>
+          </button>
+          <button>
+            <i
+              class="fa-solid fa-cart-shopping text-2xl md:text-3xl text-gray-600"
+            ></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom navBAr -->
+      <div class="container py-4">
+        <ul
+          class="flex flex-wrap items-center justify-center gap-4 md:gap-8 lg:gap-12 text-sm md:text-[16px] text-gray-500 uppercase font-semibold"
+        >
+          <li><a class="nav-hover" href="#">Home</a></li>
+          <li>
+            <a class="nav-hover" href="#">Categories</a>
+          </li>
+          <li><a class="nav-hover" href="#">Men's</a></li>
+          <li>
+            <a class="nav-hover" href="#">Women's</a>
+          </li>
+          <li><a class="nav-hover" href="#">Blog's</a></li>
+          <li>
+            <a class="nav-hover" href="#">Hot Offers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NavBar End -->
+
+    <main>
+      <!-- Hero Start -->
+      <div class="container relative">
+        <!-- hero img -->
+        <div id="hero-img">
+          <img
+            src="./assets/hero-banner.jpg"
+            class="rounded-xl w-full h-48 md:h-64 lg:h-96 object-cover"
+          />
+        </div>
+
+        <!-- Hero content -->
+        <div
+          id="hero-content"
+          class="absolute top-[15%] md:top-[25%] left-[5%] md:left-[15%] max-w-xs md:max-w-md"
+        >
+          <span class="text-pink-500 text-lg md:text-2xl mb-1 inline-block"
+            >Sale Offer</span
+          >
+          <h1
+            class="text-2xl md:text-4xl lg:text-5xl font-bold uppercase text-gray-950 mb-2 md:mb-4 leading-tight"
+          >
+            New fashion <br />
+            summer sale
+          </h1>
+          <p class="text-lg md:text-2xl text-gray-600">
+            Starting at
+            <span class="font-bold text-xl md:text-3xl">$ 39.99</span>
+          </p>
+          <button
+            class="px-3 py-2 md:px-4 md:py-2 bg-pink-500 text-white rounded-md mt-2 md:mt-4 shadow-lg hover:bg-pink-600 transition uppercase font-medium text-sm md:text-base"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <!-- Hero End -->
+
+      <!-- Categories start-->
+      <div class="container mt-6">
+        <div class="flex flex-col md:flex-row gap-3 overflow-x-auto">
+          <!-- 1 -->
+          <div
+            class="border shadow-lg rounded-xl flex gap-4 w-full md:w-fit p-3 flex-shrink-0"
+          >
+            <img
+              src="./assets/shorts.svg"
+              class="w-12 md:w-1/6 bg-[#EDEDED] p-2 shadow-md border rounded-xl flex-shrink-0"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-around uppercase text-gray-700">
+              <h3 class="font-semibold text-sm md:text-base">Shorts & jeans</h3>
+              <span class="text-pink-600 text-xs md:text-sm">Show all</span>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="border shadow-lg rounded-xl flex gap-4 w-full md:w-fit p-3 flex-shrink-0"
+          >
+            <img
+              src="./assets/shorts.svg"
+              class="w-12 md:w-1/6 bg-[#EDEDED] p-2 shadow-md border rounded-xl flex-shrink-0"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-around uppercase text-gray-700">
+              <h3 class="font-semibold text-sm md:text-base">Shorts & jeans</h3>
+              <span class="text-pink-600 text-xs md:text-sm">Show all</span>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div
+            class="border shadow-lg rounded-xl flex gap-4 w-full md:w-fit p-3 flex-shrink-0"
+          >
+            <img
+              src="./assets/shorts.svg"
+              class="w-12 md:w-1/6 bg-[#EDEDED] p-2 shadow-md border rounded-xl flex-shrink-0"
+              alt=""
+            />
+
+            <div class="flex flex-col justify-around uppercase text-gray-700">
+              <h3 class="font-semibold text-sm md:text-base">Shorts & jeans</h3>
+              <span class="text-pink-600 text-xs md:text-sm">Show all</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Categories End -->
+
+      <!-- Deal Start -->
+      <div id="deal" class="container mt-10 py-8 md:py-16 bg-[#fcfcfc]">
+        <div>
+          <h2 class="text-2xl md:text-4xl uppercase font-semibold mb-6 md:mb-8">
+            Deal of the day
+          </h2>
+        </div>
+
+        <div
+          class="border rounded-xl bg-slate-50 flex flex-col md:flex-row items-center bg-gradient"
+        >
+          <!-- img -->
+          <img
+            src="./assets/jack.png"
+            class="w-full md:w-1/3 p-6 md:p-10 rounded-xl"
+          />
+
+          <!-- content  -->
+          <div class="p-6 md:p-8 flex flex-col gap-4 max-w-5xl">
+            <h3 class="text-xl md:text-2xl font-bold uppercase">
+              Shirts, Jackets..
+            </h3>
+            <p class="text-gray-600 text-sm md:text-[16px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              libero alias. Debitis iste qui corrupti voluptas consectetur
+              necessitatibus rerum quibusdam.
+            </p>
+
+            <div class="flex items-center gap-4">
+              <span class="inline-block text-2xl md:text-4xl font-bold"
+                >$ 200</span
+              >
+              <span class="line-through text-gray-400 text-2xl md:text-4xl"
+                >$ 400</span
+              >
+            </div>
+
+            <button
+              class="px-4 py-2 bg-pink-500 text-white rounded-md mt-4 shadow-lg hover:bg-pink-600 transition uppercase font-medium w-fit text-sm md:text-base"
+            >
+              add to cart
+            </button>
+
+            <div class="w-full bg-pink-400 border rounded-full h-1 mt-8"></div>
+
+            <div class="flex justify-between items-center text-sm md:text-base">
+              <p>Already Sold: <span class="font-semibold">60</span></p>
+              <p>Available: <span class="font-semibold">20</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Deal End -->
+
+      <!-- Prroducts start -->
+      <div id="product" class="container mt-10 py-8 md:py-16">
+        <div>
+          <h2 class="text-2xl md:text-4xl uppercase font-semibold mb-6 md:mb-8">
+            New Products
+          </h2>
+        </div>
+
+        <!-- cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-4">
+          <aside class="border p-4 rounded-xl h-fit">
+            <h4
+              class="text-lg md:text-xl font-medium border-b pb-2 uppercase mb-4"
+            >
+              Category
+            </h4>
+            <ul>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Clothes <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Watches <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Bags <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Perfumes <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Cosmetics <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+              <li
+                class="flex justify-between items-center mb-4 text-gray-600 text-sm md:text-base"
+              >
+                Footwear <span><i class="fa-solid fa-plus"></i></span>
+              </li>
+            </ul>
+          </aside>
+          <!-- cards -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+          >
+            <!-- Card 1 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+
+            <!-- 4 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+
+            <!-- 5 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+
+            <!-- 6 -->
+            <div
+              class="border rounded-xl p-4 flex flex-col items-start gap-2 bg-gradient"
+            >
+              <img
+                src="./assets/shirt.png"
+                class="w-full h-32 md:h-42 object-contain mb-4"
+              />
+              <h4 class="text-lg md:text-xl font-semibold text-pink-500">
+                Shirt
+              </h4>
+              <p class="text-xs md:text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+                natus?
+              </p>
+              <span
+                class="text-gray-800 font-bold mt-2 inline-flex gap-2 md:gap-4 text-sm md:text-base"
+                >$50.00
+                <div class="line-through text-gray-500 font-light">
+                  $80.00
+                </div></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Prroducts End -->
+
+      <!-- Cta start -->
+      <div id="cta" class="container mt-10 py-8 md:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-6 md:gap-8">
+          <!-- 1 -->
+          <div class="flex flex-col gap-6">
+            <h3 class="text-xl md:text-2xl font-medium border-b pb-2">
+              Testimonial
+            </h3>
+            <div
+              class="flex flex-col gap-4 items-center justify-center text-center w-full rounded-xl border p-4"
+            >
+              <img
+                src="./assets/testimonial-1.jpg"
+                class="object-cover w-16 md:w-1/4 rounded-full"
+              />
+              <h4 class="font-semibold text-xl md:text-3xl">Shaz</h4>
+              <p class="text-gray-500 text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                repellendus, ratione, veritatis labore repudiandae doloribus hic
+                aut saepe quo aperiam ipsa delectus
+              </p>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div
+            class="relative bg-[url('/assets/cta-banner.jpg')] bg-cover bg-center rounded-2xl overflow-hidden h-[300px] md:h-[450px] w-full max-w-xl mx-auto"
+          >
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-white bg-opacity-10 flex items-center justify-center"
+            >
+              <div class="text-center px-4 md:px-6 py-6 md:py-8 rounded-lg">
+                <span
+                  class="bg-black text-white text-xs md:text-sm font-semibold px-3 md:px-4 py-1 rounded-full inline-block mb-4"
+                >
+                  35% DISCOUNT
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
+                  New Summer Collection
+                </h2>
+                <p class="text-gray-600 mt-2 text-base md:text-lg">
+                  Starting @ $20
+                </p>
+                <a
+                  href="#"
+                  class="inline-block mt-4 text-gray-800 font-semibold tracking-wide hover:underline text-sm md:text-base"
+                >
+                  SHOP NOW
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="flex flex-col gap-6">
+            <h3 class="text-xl md:text-2xl font-medium border-b pb-2">
+              Our Services
+            </h3>
+
+            <!-- cards -->
+            <div
+              class="bg-white rounded-xl p-4 md:p-6 border w-full max-w-md space-y-4 md:space-y-6"
+            >
+              <!-- 1 -->
+              <div class="flex items-start gap-4">
+                <i
+                  class="fas fa-ship text-pink-500 text-lg md:text-xl mt-1"
+                ></i>
+                <div>
+                  <h4 class="text-base md:text-lg font-semibold text-gray-800">
+                    Worldwide Delivery
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-500">
+                    For Order Over $100
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="flex items-start gap-4">
+                <i
+                  class="fas fa-rocket text-pink-500 text-lg md:text-xl mt-1"
+                ></i>
+                <div>
+                  <h4 class="text-base md:text-lg font-semibold text-gray-800">
+                    Next Day Delivery
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-500">UK Orders Only</p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="flex items-start gap-4">
+                <i
+                  class="fas fa-headset text-pink-500 text-lg md:text-xl mt-1"
+                ></i>
+                <div>
+                  <h4 class="text-base md:text-lg font-semibold text-gray-800">
+                    Best Online Support
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-500">
+                    Hours: 8AM – 11PM
+                  </p>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="flex items-start gap-4">
+                <i
+                  class="fas fa-undo-alt text-pink-500 text-lg md:text-xl mt-1"
+                ></i>
+                <div>
+                  <h4 class="text-base md:text-lg font-semibold text-gray-800">
+                    Return Policy
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray-500">
+                    Easy & Free Return
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Cta End -->
+
+      <!-- Blogs start -->
+      <div class="container mt-10 py-8 md:py-16">
+        <div>
+          <h2 class="text-2xl md:text-4xl uppercase font-semibold mb-6 md:mb-8">
+            Our Popular Blogs
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <!-- Card 1 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border">
+            <img
+              src="./assets/blog-1.jpg"
+              alt="blog"
+              class="w-full h-48 object-cover"
+            />
+            <div class="mt-4 space-y-1 p-4">
+              <p class="text-pink-500 text-sm font-medium">Shoes</p>
+              <h3
+                class="text-base md:text-lg font-semibold text-gray-800 leading-snug"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat, praesentium.
+              </h3>
+              <p class="text-xs md:text-sm text-gray-500">By Mr Shaz</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border">
+            <img
+              src="./assets/blog-1.jpg"
+              alt="blog"
+              class="w-full h-48 object-cover"
+            />
+            <div class="mt-4 space-y-1 p-4">
+              <p class="text-pink-500 text-sm font-medium">Shoes</p>
+              <h3
+                class="text-base md:text-lg font-semibold text-gray-800 leading-snug"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat, praesentium.
+              </h3>
+              <p class="text-xs md:text-sm text-gray-500">By Mr Shaz</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border">
+            <img
+              src="./assets/blog-1.jpg"
+              alt="blog"
+              class="w-full h-48 object-cover"
+            />
+            <div class="mt-4 space-y-1 p-4">
+              <p class="text-pink-500 text-sm font-medium">Shoes</p>
+              <h3
+                class="text-base md:text-lg font-semibold text-gray-800 leading-snug"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat, praesentium.
+              </h3>
+              <p class="text-xs md:text-sm text-gray-500">By Mr Shaz</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="rounded-xl overflow-hidden shadow-sm border">
+            <img
+              src="./assets/blog-1.jpg"
+              alt="blog"
+              class="w-full h-48 object-cover"
+            />
+            <div class="mt-4 space-y-1 p-4">
+              <p class="text-pink-500 text-sm font-medium">Shoes</p>
+              <h3
+                class="text-base md:text-lg font-semibold text-gray-800 leading-snug"
+              >
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Fugiat, praesentium.
+              </h3>
+              <p class="text-xs md:text-sm text-gray-500">By Mr Shaz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blogs End -->
+    </main>
+
+    <!-- Footer start -->
+    <footer
+      class="bg-[#212121] container mx-auto mt-10 py-16 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="text-pink-600 uppercase text-xl font-semibold mb-4">
+        All Items
+      </div>
+
+      <!-- top footer -->
+      <div class="flex flex-col gap-6">
+        <!-- 1 -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-2 text-[#7B7B7B] uppercase"
+        >
+          <h4 class="font-bold">Fashion:</h4>
+          <p class="text-sm sm:text-base">
+            T-shirt | Shirts | shorts & jeans | jacket | dress & frock |
+            innerwear hosiery
+          </p>
+        </div>
+
+        <!--2 -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-2 text-[#7B7B7B] uppercase"
+        >
+          <h4 class="font-bold">Fashion:</h4>
+          <p class="text-sm sm:text-base">
+            T-shirt | Shirts | shorts & jeans | jacket | dress & frock |
+            innerwear hosiery
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-2 text-[#7B7B7B] uppercase"
+        >
+          <h4 class="font-bold">footwear:</h4>
+          <p class="text-sm sm:text-base">
+            sport | formal | Boots | casual | cowboy shoes | safety shoes |
+            Party wear shoes | Branded | Firstcopy | Long shoes |
+          </p>
+        </div>
+
+        <!-- 4 -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-2 text-[#7B7B7B] uppercase"
+        >
+          <h4 class="font-bold">jewellery :</h4>
+          <p class="text-sm sm:text-base">
+            Necklace | Earrings | Couple rings | Pendants | Crystal | Bangles |
+            bracelets | nosepin | chain | Earrings | Couple rings |
+          </p>
+        </div>
+
+        <!-- 5 -->
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-2 text-[#7B7B7B] uppercase"
+        >
+          <h4 class="font-bold">cosmetics:</h4>
+          <p class="text-sm sm:text-base">
+            Shampoo | Bodywash | Facewash | makeup kit | liner | lipstick |
+            prefume | Body soap | scrub | hair gel | hair colors | hair dye |
+            sunscreen
+          </p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Middle footer -->
+      <div
+        class="flex flex-col md:flex-row md:items-center justify-between mt-6 gap-4"
+      >
+        <div id="logo" class="text-3xl sm:text-4xl font-bold text-pink-500">
+          Shaz
+        </div>
+
+        <!-- Contact -->
+        <div class="flex flex-col gap-2 w-full md:w-auto">
+          <h4 class="uppercase text-white text-sm sm:text-base">
+            Drop your feedback
+          </h4>
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="px-4 py-2 rounded-md w-full md:w-64"
+          />
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- bottom footer -->
+      <div
+        class="flex items-center justify-center flex-col gap-4 mt-6 text-white"
+      >
+        <h4 class="text-sm sm:text-base text-center">
+          Made with 💗 By Sheraz Yousaf
+        </h4>
+        <p class="text-sm sm:text-base">Follow Me</p>
+
+        <div class="flex gap-4 sm:gap-8 flex-wrap justify-center">
+          <a href="#"
+            ><i
+              class="fa-brands fa-facebook text-2xl sm:text-3xl hover:text-pink-400 transition hover:-translate-y-1"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-github text-2xl sm:text-3xl hover:text-pink-400 transition hover:-translate-y-1"
+            ></i
+          ></a>
+
+          <a href="#"
+            ><i
+              class="fa-brands fa-instagram text-2xl sm:text-3xl hover:text-pink-400 transition hover:-translate-y-1"
+            ></i
+          ></a>
+          <a href="#"
+            ><i
+              class="fa-brands fa-x-twitter text-2xl sm:text-3xl hover:text-pink-400 transition hover:-translate-y-1"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
