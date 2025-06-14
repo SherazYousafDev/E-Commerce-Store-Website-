@@ -2,12 +2,15 @@
 
 Shaz is a modern, responsive fashion e-commerce landing page built with **HTML** and **Tailwind CSS**. It includes elegant sections for hero banners, categories, and product cards with clean layout and user-friendly navigation.
 
-## 🔗 Live Preview
-
-
 
 ## 📸 Screenshots
 
+![preview](https://github.com/user-attachments/assets/a5381f7d-deaf-4ccb-9696-82dcd7987a34)
+
+
+## 🔗 Live Preview
+
+https://sherazyousafdev.github.io/E-Commerce-Store-Website-/
 
 
 ## ✨ Features
@@ -26,6 +29,6 @@ Shaz is a modern, responsive fashion e-commerce landing page built with **HTML**
 
 ## Credits
 
-Made with 💗 By Sheraz Yousaf
+Made with 💗 By Sheraz Yousaf.
 
 
